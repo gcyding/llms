@@ -1,0 +1,31 @@
+训练环境：由于在公司服务器上不方便安装一些库和包，这里使用colab环境搭建
+1.安装paddle 
+    !pip install paddlepaddle==2.4.2
+2.安装lac
+    !pip install lac
+3.安装可能依赖的包：
+    libsm6库：
+        !apt-get update
+        !apt-get install -y libsm6 libxext6 libxrender-dev
+        !pip install opencv-python
+    libssl1库：
+        !wget http://nz2.archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.19_amd64.deb
+        !sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2.19_amd64.deb
+4.训练模型，关键是要在训练代码里添加：paddle.enable_static()，如：
+    from LAC import LAC
+    import paddle
+    paddle.enable_static()
+    # 选择使用分词模型
+    lac = LAC(mode = 'seg')
+
+    # 训练和测试数据集，格式一致
+    train_file = "./sample_data/seg_train.tsv"
+    test_file = "./sample_data/seg_test.tsv"
+    lac.train(model_save_dir='./sample_data/my_seg_model/',train_data=train_file, test_data=test_file)
+
+    # 使用自己训练好的模型
+    my_lac = LAC(mode = 'seg',model_path='./sample_data/my_seg_model')
+    texts = [u"LAC是个优秀的分词工具", u"百度是一家高科技公司"]
+    rank_result = my_lac.run(texts)
+    print(rank_result)
+
