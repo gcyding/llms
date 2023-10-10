@@ -29,3 +29,4 @@
     rank_result = my_lac.run(texts)
     print(rank_result)
 
+可以参考：https://colab.research.google.com/drive/15JqISX0B2ulxE6PKMsDI7XIxtPqDHEBF
