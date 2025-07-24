@@ -9,7 +9,7 @@
 [OpenRLHF源码解读：理解PRM(过程奖励模型)训练过程](https://zhuanlan.zhihu.com/p/16027048017)
 
 ### 系列2
-[RLHF】想训练ChatGPT？先来看看强化学习（RL）+语言模型（LM）吧（附源码）](https://zhuanlan.zhihu.com/p/606328992)
+[【RLHF】想训练ChatGPT？先来看看强化学习（RL）+语言模型（LM）吧（附源码）](https://zhuanlan.zhihu.com/p/606328992)
 
 [【RLHF】想训练ChatGPT？得先弄明白Reward Model怎么训（附源码）](https://zhuanlan.zhihu.com/p/595579042)
 
@@ -26,7 +26,25 @@
 
 ### 系列2
 [图解大模型RLHF系列之：人人都能看懂的PPO原理与源码解读](https://zhuanlan.zhihu.com/p/677607581)
+
 [RLHF通俗理解](https://zhuanlan.zhihu.com/p/685261886)
+
+## DPO
+
+### 系列1
+[DPO 是如何简化 RLHF 的](https://zhuanlan.zhihu.com/p/671780768)
+
+[DPO: Direct Preference Optimization 直接偏好优化（学习笔记）](https://www.cnblogs.com/lemonzhang/p/17910358.html)
+
+[DPO: Direct Preference Optimization 论文解读及代码实践](https://zhuanlan.zhihu.com/p/642569664)
+
+[使用 DPO 微调 Llama 2](https://huggingface.co/blog/zh/dpo-trl)
+
+[监督式微调(SFT) & 偏好对齐(DPO)：From Zero To Hero](https://zhuanlan.zhihu.com/p/715250294)
+
+## GRPO
+
+## RFT
 
 ## 综合
 ### 系列1
@@ -35,3 +53,10 @@
 [大模型中的强化学习——大语言模型研究05](https://limoncc.com/post/c0a3be9c86b2b4cd/)
 
 [一文搞懂大模型强化学习策略：DPO、PPO和GRPO](https://mp.weixin.qq.com/s/JKpkgGHqyAVG95sGC1JFDQ)
+
+# Agent相关
+
+## Context Engineering
+[让manus从零到一的上下文工程到底是什么？一文起底](https://mp.weixin.qq.com/s/olCKdXCNKuu1nnjaUWHFvA)
+
+
