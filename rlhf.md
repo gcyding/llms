@@ -24,9 +24,14 @@
 
 [OpenRLHF源码解读：3.PPO模型训练过程](https://zhuanlan.zhihu.com/p/14813158239)
 
+### 系列2
+[图解大模型RLHF系列之：人人都能看懂的PPO原理与源码解读](https://zhuanlan.zhihu.com/p/677607581)
+[RLHF通俗理解](https://zhuanlan.zhihu.com/p/685261886)
+
 ## 综合
 ### 系列1
 [大模型是这样炼成的](https://mp.weixin.qq.com/s/D6gtKpNm9PP-NCm2PdUFlg)
 
-### 系列2
 [大模型中的强化学习——大语言模型研究05](https://limoncc.com/post/c0a3be9c86b2b4cd/)
+
+[一文搞懂大模型强化学习策略：DPO、PPO和GRPO](https://mp.weixin.qq.com/s/JKpkgGHqyAVG95sGC1JFDQ)
