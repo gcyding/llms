@@ -59,4 +59,25 @@
 ## Context Engineering
 [让manus从零到一的上下文工程到底是什么？一文起底](https://mp.weixin.qq.com/s/olCKdXCNKuu1nnjaUWHFvA)
 
+[万字长文深入浅出教你优雅开发复杂AI Agent](https://mp.weixin.qq.com/s/eon4MCCErRWLT7GxSoR70g?poc_token=HGFff2ij1drPeQOv1I219g43eOnLonQtjC60hJI9)
+
+## 智能体框架
+- MetaGPT
+  - [官网](https://www.deepwisdom.ai/)
+  - [github](https://github.com/FoundationAgents/MetaGPT)
+  - [文档](https://docs.deepwisdom.ai/main/zh/)
+- OpenManus
+  - [官网](https://openmanus.org/)
+  - [github](https://github.com/FoundationAgents/OpenManus)
+- AutoGen
+  - [官网](https://microsoft.github.io/autogen/stable/)
+  - [github](https://github.com/microsoft/autogen)
+  - [文档](https://microsoft.github.io/autogen/0.2/docs/Getting-Started/)
+- AutoGPT
+  - [官网](https://autogpt.net/)
+  - [github](https://github.com/Significant-Gravitas/AutoGPT)
+  - [文档](https://docs.agpt.co/)
+- 字节deep search
+  - [github](https://github.com/volcengine/ai-app-lab/tree/main/demohouse/deep_search_mcp/backend)
+
 
