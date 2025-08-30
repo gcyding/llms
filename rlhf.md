@@ -13,6 +13,11 @@
 
 [【RLHF】想训练ChatGPT？得先弄明白Reward Model怎么训（附源码）](https://zhuanlan.zhihu.com/p/595579042)
 
+## Loss计算
+loss计算涉及chosen_reward和rejected_reward，计算逻辑都是在基础模型（如sft模型）的最后一层，套一个分类层：nn.Linear(config.hidden_size, 1, bias=False)，将token的隐藏层转化成一个打分值，基于这个打分值来计算chosen_reward、rejected_reward，再根据-torch.nn.functional.logsigmoid(chosen_reward - rejected_reward)计算loss
+1.可以参考：https://zhuanlan.zhihu.com/p/14993645091，代码：https://github.com/OpenRLHF/OpenRLHF/blob/main/openrlhf/models/model.py
+2.也可以参考：https://zhuanlan.zhihu.com/p/4535749790，代码：https://github.com/deepspeedai/DeepSpeedExamples/blob/master/applications/DeepSpeed-Chat/dschat/utils/model/reward_model.py
+
 ## PPO
 
 ### 相关论文
