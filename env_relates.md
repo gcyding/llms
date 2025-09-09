@@ -41,3 +41,15 @@
     --fsdp "full_shard auto_wrap" \
     --fsdp_transformer_layer_cls_to_wrap 'LlamaDecoderLayer' \
     --tf32 True
+
+
+##安装openrlhf踩的坑
+
+1.遇到依赖flash_attn安装失败的问题：https://github.com/Dao-AILab/flash-attention/issues/1799
+参考peterroelants的回答：
+Using pip install "flash_attn @ https://github.com/Dao-AILab/flash-attention/releases/download/v2.8.3/flash_attn-2.8.3+cu12torch2.8cxx11abiTRUE-cp312-cp312-linux_x86_64.whl" worked for me (after installing pytorch 2.8 with CUDA 12.8 support)
+###解决方法：
+
+1.查看环境torch和cuda版本号：2.8.0+cu128
+2.查到https://github.com/Dao-AILab/flash-attention/releases中的对应版本，这里下载的https://github.com/Dao-AILab/flash-attention/releases/download/v2.8.3/flash_attn-2.8.3+cu12torch2.8cxx11abiTRUE-cp312-cp312-linux_x86_64.whl
+3.本地安装：pip install flash_attn-2.8.3+cu12torch2.8cxx11abiTRUE-cp312-cp312-linux_x86_64.whl
